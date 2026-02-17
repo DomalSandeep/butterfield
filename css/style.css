@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  
 }
+body{
+    background: #F6FAFF;
 
+}
 .main {
   min-height: 100vh;
   width: 100%;
@@ -18,6 +22,9 @@
 
 .header {
   background-image: url("../images/bg-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .navbar {
@@ -66,22 +73,80 @@ button {
 }
 
 .greeting {
-  padding: 20px 60px;
+  padding: 20px 90px 60px;
 }
 
 h1 {
   font-weight: 700;
   font-size: 24px;
-  color: #FDFDFD;
+  color: #000000;
+}
+
+h2 {
+  font-size: 18px;
+
+}
+
+h3 {
+  font-size: 16px;
+
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 12px;
+
+}
+
+
+.quick-actions {
+  max-width: 940px;
+  max-height: 145px;
+  top: 166px;
+  left: 213px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+
+.quick-actions__item {
+  text-align: center;
+}
+
+.quick-actions__icon {
+  padding: 32px;
+  background: linear-gradient(to right, #F3EED5, #C8DAE1);
+  border-radius: 40px;
+  box-shadow:
+    0 10px 20px rgba(0, 32, 74, 0.08),
+    0 4px 6px rgba(0, 32, 74, 0.05);
+}
+
+.quick-actions__icon img {}
+
+.quick-actions__icon {
+  padding: 32px;
+}
+
+.quick-actions__label {
+  max-width: 50px;
+  margin: 0 auto;
+  margin-top: 16px;
+  font-size: 14px;
 }
 
 .DashboardMain {
   padding: 0 70px;
   width: 100%;
   display: flex;
-  margin-top: 100px;
+  margin-top: 60px;
   gap: 20px;
-  background: violet;
+  margin-bottom: 150px;
 }
 
 .dashboardleft {
@@ -90,7 +155,16 @@ h1 {
 
 .dashboardright {
   width: 30%;
-  background: aqua;
+}
+
+.AccountOverview {
+  border: 1px solid #86AEC1;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow:
+    0 10px 20px rgba(0, 32, 74, 0.08),
+    0 4px 6px rgba(0, 32, 74, 0.05);
+  margin-top: 20px;
 }
 
 .account-row {
@@ -113,21 +187,24 @@ h1 {
 
 .account-filter-bar {
   display: flex;
-  background: cornsilk;
   justify-content: space-between;
-  padding: 16px;
   border-radius: 12px;
   margin-top: 16px;
   margin-bottom: 40px;
 }
 
+.account-type h4{
+  font-weight: 400;
+}
+
 .account-filter-bar-left {
   display: flex;
   align-items: center;
-  background: cadetblue;
   border-radius: 8px;
-  padding-left: 16px;
-  border: 1px solid;
+  padding: 0 16px 0px 16px;
+  border: 1px solid #86AEC1;
+  gap: 30px;
+
 }
 
 
@@ -160,9 +237,201 @@ h1 {
   padding: 12px 20px;
   background: #EBF7FF;
   border-radius: 12px;
-    margin-top: 10px;
+  margin-top: 10px;
+  box-shadow: 
+        0 10px 20px rgba(0, 32, 74, 0.08), 
+        0 4px 6px rgba(0, 32, 74, 0.05);
 }
 
 .transaction-Amount {
   color: #FF4646;
+}
+
+.h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.transaction-date-header,
+.transaction-description-header,
+.transaction-status-header,
+.transaction-Amount-header,
+.reference,
+.transaction-time {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  color: #0B75C2;
+}
+
+.DR-top {
+  background-image: url("../images/river-img.jpg");
+  color: white;
+  border-radius: 14px;
+  margin-bottom: 40px;
+}
+
+.overlaycontent>h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  /* padding: 40px 80px 0 24px; */
+}
+
+.overlaycontent {
+  padding: 35px 24px 28px;
+
+}
+
+.wealth-ad {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.wealth-ad img {
+  max-width: 150px;
+  max-height: 24px;
+}
+
+.know-btn {
+  padding: 10px 42px;
+  border: 1px solid wheat;
+  border-radius: 6px;
+  color: white;
+}
+
+.i-have {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DR-middle {
+  background: aliceblue;
+  border-radius: 14px;
+  margin: 20px 0 40px 0px;
+box-shadow: 
+                0 0 25px rgba(0, 32, 74, 0.08),   /* Central glow */
+                0 4px 10px rgba(0, 32, 74, 0.04);
+}
+
+.DR-middle-wrapper {
+  padding: 28px;
+}
+
+.status-badge {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DR-bottom {
+  background-image: url(/images/bank-notice-img.svg), linear-gradient(to right, #F3EED5, #C8DAE1);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  margin-top: 24px;
+}
+
+.DR-bottom-wrapper {
+  padding: 24px;
+  padding-bottom: 50px;
+}
+
+.notice-content {
+  padding-bottom: 45px;
+}
+
+.notice-content h2 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.notice-content h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.notice-content h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.write-to-cont {
+  padding-bottom: 28px;
+}
+
+.write-to-cont h4 {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.location {
+  display: flex;
+  gap: 5px;
+}
+
+.location h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0B75C2;
+  align-items: center;
+}
+
+/* Swiper css code */
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chart-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  z-index: 100;
+  padding: 10px;
+}
+
+.savings-bar,
+.cheque-bar,
+.investment-bar {
+  height: 10px;
+  width: 20px;
+  background: #2366B4;
+  border-radius: 5px;
+}
+
+.cheque-bar {
+  background: #769AC4;
+}
+
+.investment-bar {
+  background: #0D233E;
+}
+
+.status-badge-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ButterField</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -43,8 +45,43 @@
                 </div>
             </header>
 
+
         </div>
-        <div class="conatiner">
+
+        <div class="container">
+            <div class="quick-actions">
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/send-money.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/receipt-2.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/star.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/card-add.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/cards.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/investment.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+                <div class="quick-actions__item">
+                    <div class="quick-actions__icon"><img src="images/fraud.svg" alt=""></div>
+                    <p class="quick-actions__label">Transfer Money</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
             <div class="DashboardMain">
                 <div class="dashboardleft">
                     <h1>At a Glance</h1>
@@ -185,17 +222,163 @@
                                 <div class="transaction-status">Sucessful</div>
                                 <div class="transaction-Amount">-KYD 10,000.00</div>
                             </div>
+                            <div class="view-all">
+                                <h4>View All</h4>
+                            </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="dashboardright">
+                    <div class="DR-top">
+                        <div class="overlaycontent">
+                            <h1>Your wealth, safeguarded by a legacy of trust.</h1>
+                            <div class="wealth-ad">
+                                <img src="images/logo.svg" alt="">
+                                <h3>Wealth Advisory</h3>
+                            </div>
+                            <button class="know-btn">Know More</button>
+
+                        </div>
+                    </div>
+                    <h2>Your Money with Us</h2>
+                    <div class="DR-middle">
+                        <div class="DR-middle-wrapper">
+                            <div class="i-have">
+                                <h3>KYD 4,750,500.00</h3>
+                                <div class="account-filter-bar-right">
+                                    <div class="last">I Have</div>
+                                    <div class="upcoming">Upcoming</div>
+                                </div>
+                            </div>
+                            <div class="circle-graph">
+                                <div class="chart-container">
+                                    <canvas id="donutChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="status-badge">
+                                <div class="status-badge-wrapper">
+                                    <div class="savings-bar"></div>
+                                    <h5>Savings</h5>
+                                </div>
+                                <div class="status-badge-wrapper">
+                                    <div class="cheque-bar"></div>
+                                    <h5>Chequing</h5>
+                                </div>
+                                <div class="status-badge-wrapper">
+                                    <div class="investment-bar"></div>
+                                    <h5>Investments</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Bank Notice</h2>
+                    <!-- <div class="DR-bottom">
+                        <div class="DR-bottom-wrapper">
+                            <div class="notice-content">
+                                <h2>Get in touch</h2>
+                                <div class="write-to-cont">
+                                    <h3>Write to us</h3>
+                                    <h4>info.cayman@butterfieldgroup.com</h4>
+                                </div>
+                                <div class="call-us-cont">
+                                    <h3>Call us</h3>
+                                    <h4>+1 (441) 298 4691</h4>
+                                </div>
+                            </div>
+                            <div class="location">
+                                <div class="loc-icon"><img src="images/pin.svg" alt=""></div>
+                                <div class="loc-content">
+                                    <h4>Find an ATM / Locate a Branch</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="DR-bottom">
+                                    <div class="DR-bottom-wrapper">
+                                        <div class="notice-content">
+                                            <h2>Get in touch</h2>
+                                            <div class="write-to-cont">
+                                                <h3>Write to us</h3>
+                                                <h4>info.cayman@butterfieldgroup.com</h4>
+                                            </div>
+                                            <div class="call-us-cont">
+                                                <h3>Call us</h3>
+                                                <h4>+1 (441) 298 4691</h4>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="loc-icon"><img src="images/pin.svg" alt=""></div>
+                                            <div class="loc-content">
+                                                <h4>Find an ATM / Locate a Branch</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="DR-bottom">
+                                    <div class="DR-bottom-wrapper">
+                                        <div class="notice-content">
+                                            <h2>Get in touch</h2>
+                                            <div class="write-to-cont">
+                                                <h3>Write to us</h3>
+                                                <h4>info.cayman@butterfieldgroup.com</h4>
+                                            </div>
+                                            <div class="call-us-cont">
+                                                <h3>Call us</h3>
+                                                <h4>+1 (441) 298 4691</h4>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="loc-icon"><img src="images/pin.svg" alt=""></div>
+                                            <div class="loc-content">
+                                                <h4>Find an ATM / Locate a Branch</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="DR-bottom">
+                                    <div class="DR-bottom-wrapper">
+                                        <div class="notice-content">
+                                            <h2>Get in touch</h2>
+                                            <div class="write-to-cont">
+                                                <h3>Write to us</h3>
+                                                <h4>info.cayman@butterfieldgroup.com</h4>
+                                            </div>
+                                            <div class="call-us-cont">
+                                                <h3>Call us</h3>
+                                                <h4>+1 (441) 298 4691</h4>
+                                            </div>
+                                        </div>
+                                        <div class="location">
+                                            <div class="loc-icon"><img src="images/pin.svg" alt=""></div>
+                                            <div class="loc-content">
+                                                <h4>Find an ATM / Locate a Branch</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
 
                 </div>
             </div>
 
         </div>
     </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
